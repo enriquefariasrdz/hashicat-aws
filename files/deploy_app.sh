@@ -2,6 +2,8 @@
 # Script to deploy a very simple web application.
 # The web app has a customizable image and some text.
 
+PREFIX="hashicat-aws"
+
 cat << EOM > /var/www/html/index.html
 <html>
   <head><title>Meow!</title></head>
@@ -11,7 +13,7 @@ cat << EOM > /var/www/html/index.html
   <!-- BEGIN -->
   <center><img src="http://${PLACEHOLDER}/${WIDTH}/${HEIGHT}"></img></center>
   <center><h2>Meow World!</h2></center>
-  Welcome to ${PREFIX}'s app. Come tortillasy no hamburguesas. VIVA Mexico
+  Welcome to ${PREFIX}'s app. Come tortillas y no hamburguesas. VIVA Mexico
   <!-- END -->
 
   </div>
